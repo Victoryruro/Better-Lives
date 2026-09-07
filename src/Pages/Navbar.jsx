@@ -24,12 +24,12 @@ const Header = () => {
 
             {/* <!-- Desktop Menu --> */}
             <div className="hidden lg:flex space-x-8 font-semibold ml-auto">
-              <Link to="/Job" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg">About</Link>
-              <Link to="/Company" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg">Mission</Link>
-              <Link to="/About" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg">Programs</Link>
-              <Link to="/Pricing" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg">Impact</Link>
-              <Link to="/Blog" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg">Stories</Link>
-              <Link to="/Contact" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg">Contact</Link>
+              <Link to="/Job" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg xl:text-xl">About</Link>
+              <Link to="/Company" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg xl:text-xl">Mission</Link>
+              <Link to="/About" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg xl:text-xl">Programs</Link>
+              <Link to="/Pricing" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg xl:text-xl">Impact</Link>
+              <Link to="/Blog" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg xl:text-xl">Stories</Link>
+              <Link to="/Contact" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg xl:text-xl">Contact</Link>
             </div>
 
             {/* <!-- Call to Action + Theme Toggle --> */}
@@ -42,7 +42,7 @@ const Header = () => {
                 {theme === 'dark' ? <FiSun size={35} /> : <FiMoon size={35} />}
               </button>
 
-              <Link to="/Company" className="px-4 py-2 bg-primary-50 rounded-md text-white font-semibold text-xl hover:bg-primary-50 transition-all">
+              <Link to="/Company" className="px-4 py-2 bg-primary-50 rounded-md text-white font-semibold text-xl xl:text-2xl hover:bg-primary-50 transition-all">
                 Donate Now
               </Link>
             </div>
