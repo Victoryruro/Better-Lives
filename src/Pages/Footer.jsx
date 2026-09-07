@@ -1,29 +1,38 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import image from '../assets/Hiredesklogo3.png'
+import image from '../assets/LogoDark.png'
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { FaEnvelope } from 'react-icons/fa';
+import { FiSearch, FiPlus, FiMail } from 'react-icons/fi'
 import { FaHome, FaUser, FaSearch, FaPhoneAlt } from 'react-icons/fa'
 import { FaInstagram, FaFacebook, FaTwitter, FaTiktok, FaLinkedin } from 'react-icons/fa'
+import { useState } from 'react'
 
 const Footer = () => {
+    const [email, setEmail] = useState('')
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        // wire to your /api/subscribe endpoint here
+        console.log('Subscribing:', email)
+    }  
   return (
     <>
-      <footer className="bg-primary-500 text-gray-500 py-8  md:paddingLeftRight pt-12">
+      <footer className="bg-primary-600 mt-28 text-gray-500 py-8  md:paddingLeftRight pt-12">
           <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 ">
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6  md:text-2xl  font-semibold text-left">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6  md:text-xl sm:text-2xl  font-semibold text-left!">
                   {/* <!-- Footer Left: Logo and Description --> */}
-                <div className="col-span-1 md:col-span-2 lg:col-span-1">
+                <div className="col-span-1 md:col-span-full text-left! lg:col-span-2">
                         {/* <!-- Logo --> */}
                     <div className="shrink-0 text-primary-50 font-bold text-2xl ">
                         <Link to="/">
                         <img src={image} alt="Logo" className="h-20 " />
                         </Link>
                     </div>
-                      <p className="mt-2  text-2xl font-semibold text-left pb-4">
-                          Connect with your next career opportunity. HireHub is the modern job board platform for top talent and leading employers.
+                      <p className="mt-2  text-2xl font-semibold text-left pb-4 w-4/5">
+                          Empowering communities and Children through education, healthcare, and sustainable development worldwide.
                       </p>
-                    <div className="mt-4 space-y-5 text-left">
+                    {/* <div className="mt-4 space-y-5 text-left">
                         <a href="tel:+2341234567890" className="hover:text-gray-300 transition ">
                             <FaPhoneAlt className="inline mr-3" />
                                 (234) 123-456-7890
@@ -36,7 +45,7 @@ const Footer = () => {
                             <FaMapMarkerAlt className="inline mr-3" />
                             123 Job Street, Career City
                         </a>
-                    </div>
+                    </div> */}
   
                     <div>
                         
@@ -61,8 +70,8 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="w-full grid grid-cols-2  md:grid-cols-2 lg:grid-cols-4  justify-center  md:col-span-2 md:gap-6 gap-2 text-nowrap ">
-                  <div className="md:p-8  ">
+                <div className="md:col-span-full lg:col-span-2 text-left! grid grid-cols-2 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-3  justify-center   md:gap-4 gap-2 text-nowrap ">
+                  <div className="md:p-5  ">
                       <h3 className="text-lg md:text-base font-bold text-primary-400 uppercase">For Job Seekers</h3>
                       <ul className="mt-4 space-y-2">
                           <li><Link to="/#hero" className=" hover:text-gray-300 transition">Browse Jobs</Link></li>
@@ -72,7 +81,7 @@ const Footer = () => {
                           
                       </ul>
                   </div>
-                  <div className="md:p-8">
+                  <div className="md:p-5">
                       <h3 className="text-lg md:text-base font-bold text-primary-400 uppercase">For Employers</h3>
                       <ul className="mt-4 space-y-2">
                           <li><Link to="/#hero" className=" hover:text-gray-300 transition">Post a Job</Link></li>
@@ -82,7 +91,7 @@ const Footer = () => {
                          
                       </ul>
                   </div>
-                  <div className="md:p-8">
+                  <div className="md:p-5">
                       <h3 className="text-lg md:text-base font-bold text-primary-400 uppercase">Resources</h3>
                       <ul className="mt-4 space-y-2">
                           <li><Link to="/#hero" className=" hover:text-gray-300 transition">Blog</Link></li>
@@ -93,16 +102,34 @@ const Footer = () => {
                       </ul>
                   </div>
 
-                  <div className="md:p-8">
-                      <h3 className="text-lg md:text-base font-bold text-primary-400 uppercase">Company</h3>
-                      <ul className="mt-4 space-y-2">
-                          <li><Link to="/" className=" hover:text-gray-300 transition">About</Link></li>
-                          <li><Link to="/" className=" hover:text-gray-300 transition">Contact</Link></li>
-                          <li><Link to="/#Faq" className=" hover:text-gray-300 transition">Privacy Policy</Link></li>
-                          <li><Link to="/#Review" className=" hover:text-gray-300 transition">Terms of Service</Link></li>
-                      </ul>
-                  </div>                    
+
                 </div>  {/* <!-- Footer Center: Useful Links --> */}
+                <form
+                    onSubmit={handleSubmit}
+                    className="lg:col-span-2 md:col-span-full flex flex-col justify-start items-center md:p-5  gap-3  mx-auto mb-5 md:gap-6   "
+                    >
+                    <h3 className="text-lg md:text-base font-bold text-primary-400 uppercase">Stay Updated</h3>
+                    <p className=" hover:text-gray-300 transition">Get updates on our programs and the communities we serve.</p>       
+                    <div className=" flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-5 py-3">
+                        <FiMail className="text-gray-500 shrink-0" size={30} />
+                        <input
+                        type="email"
+                        required
+                        placeholder="Enter your email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        className="w-full bg-transparent outline-none text-xl text-gray-200 placeholder:text-gray-500"
+                        />
+                        <button
+                            type="submit"
+                            className="w-full sm:w-auto px-6 py-3 bg-primary-50 text-white font-semibold rounded-full hover:opacity-90 transition-all whitespace-nowrap text-xl"
+                        >
+                            Subscribe
+                        </button>                        
+                    </div>
+
+
+                </form>
 
 
 
