@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
  
-// import Home from './Pages/Home'
+import Home from './Pages/Home'
 // import Job from './Pages/Job'
 // import Company from './Pages/Company'
 // import About from './Pages/About'
@@ -23,7 +23,7 @@ function App() {
       <Router>
         <Navbar/>
         <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/" element={<Home />} />
           {/* <Route path="/Job" element={<Job />} />
           <Route path="/Company" element={<Company />} />
           <Route path="/About" element={<About />} />

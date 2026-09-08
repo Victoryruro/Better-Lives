@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import image from '../assets/LogoDark.png'
-import { FaMapMarkerAlt } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaYoutubeSquare } from 'react-icons/fa';
 import { FaEnvelope } from 'react-icons/fa';
 import { FiSearch, FiPlus, FiMail } from 'react-icons/fi'
 import { FaHome, FaUser, FaSearch, FaPhoneAlt } from 'react-icons/fa'
@@ -60,11 +60,11 @@ const Footer = () => {
                                 <FaTwitter size={35} />
                             </a>
                             <a href="https://www.tiktok.com" target="_blank" rel="noreferrer" className="rounded-xl bg-[#1f2937]  p-2 hover:text-primary-400 transition text-gray-500 hover:scale-110 transform duration-200">
-                                <FaTiktok size={35} />
+                                <FaYoutubeSquare size={35} />
                             </a>
-                            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="rounded-xl bg-[#1f2937]  p-2 hover:text-primary-400 transition text-gray-500 hover:scale-110 transform duration-200">
+                            {/* <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="rounded-xl bg-[#1f2937]  p-2 hover:text-primary-400 transition text-gray-500 hover:scale-110 transform duration-200">
                                 <FaLinkedin size={35} />
-                            </a>
+                            </a> */}
                         </div>
                         {/* <p className="mt-4 text-sm">Email: support@LemonDay.com</p> */}
                     </div>
