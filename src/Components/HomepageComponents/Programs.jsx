@@ -2,8 +2,7 @@ import { Link } from 'react-router-dom'
 import { FiCode, FiFeather, FiBarChart2, FiHeart,FiBookOpen, FiMap, FiGlobe, FiArrowRight } from 'react-icons/fi'
 import { HiOutlineSpeakerphone,  } from 'react-icons/hi'
 
-
-const Programs = [
+export const Programs = [
   {
     name: 'Education for All',
     Text: 'Building schools, training teachers, and providing scholarships to ensure every child has access to quality education regardless of their background.',
