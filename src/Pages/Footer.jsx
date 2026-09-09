@@ -18,7 +18,7 @@ const Footer = () => {
     }  
   return (
     <>
-      <footer className="bg-primary-600 mt-28 text-gray-500 py-8  md:paddingLeftRight pt-12">
+      <footer className="bg-primary-600  text-gray-500 py-8  md:paddingLeftRight pt-12">
           <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 ">
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6  md:text-xl sm:text-2xl  font-semibold text-left!">
                   {/* <!-- Footer Left: Logo and Description --> */}
