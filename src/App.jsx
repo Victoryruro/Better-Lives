@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home'
 // import Job from './Pages/Job'
 // import Company from './Pages/Company'
-// import About from './Pages/About'
+import About from './Pages/About'
 // import Pricing from './Pages/Pricing'
 // import BlogPost from './Component/BlogPage/BlogPost'
 // import Contact from './Pages/Contact'
@@ -14,6 +14,7 @@ import './App.css'
 
 import Navbar from './Pages/Navbar'
 import Footer from './Pages/Footer'
+import ScrollToTop from './Components/ScrollToTopEffect'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,13 +22,12 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTop/>
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/Job" element={<Job />} />
-          <Route path="/Company" element={<Company />} />
           <Route path="/About" element={<About />} />
-          <Route path="/Pricing" element={<Pricing />} />
+          {/* <Route path="/Pricing" element={<Pricing />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Blog" element={<Blog />} />
           <Route path="/Blog/:slug" element={<BlogPost />} /> */}

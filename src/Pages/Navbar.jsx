@@ -24,7 +24,7 @@ const Header = () => {
 
             {/* <!-- Desktop Menu --> */}
             <div className="hidden lg:flex space-x-8 font-semibold ml-auto">
-              <Link to="/" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg xl:text-xl">About</Link>
+              <Link to="/About" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg xl:text-xl">About</Link>
               <Link to="/#mission" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg xl:text-xl">Mission</Link>
               <Link to="/About" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg xl:text-xl">Programs</Link>
               <Link to="/#impact" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg xl:text-xl">Impact</Link>
@@ -75,7 +75,7 @@ const Header = () => {
         {/* <!-- Mobile Menu --> */}
         {isOpen && (
           <div id="mobile-menu" className="  px-4 pb-4 w-full flex flex-col justify-start items-start p-10 gap-7 lg:hidden bg-primary-400 dark:bg-gray-900! border-t border-gray-200 dark:border-gray-700! transition-all duration-300">
-              <Link onClick={() => setIsOpen(false)} to="/Job" className="text-gray-900 dark:text-gray-100! hover:text-gray-700 dark:hover:text-white transition text-2xl">About</Link>
+              <Link onClick={() => setIsOpen(false)} to="/About#about" className="text-gray-900 dark:text-gray-100! hover:text-gray-700 dark:hover:text-white transition text-2xl">About</Link>
               <Link onClick={() => setIsOpen(false)} to="/#mission" className="text-gray-900 dark:text-gray-100! hover:text-gray-700 dark:hover:text-white transition text-2xl">Mission</Link>
               <Link onClick={() => setIsOpen(false)} to="/About" className="text-gray-900 dark:text-gray-100! hover:text-gray-700 dark:hover:text-white transition text-2xl">Programs</Link>
               <Link onClick={() => setIsOpen(false)} to="/#impact" className="text-gray-900 dark:text-gray-100! hover:text-gray-700 dark:hover:text-white transition text-2xl">Impact</Link>
