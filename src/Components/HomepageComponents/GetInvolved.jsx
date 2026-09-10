@@ -1,11 +1,11 @@
 import React from 'react'
-import { FiArrowRight, FiDollarSign } from 'react-icons/fi'
+import { FiArrowRight, FiDollarSign, FiHeart, FiUserPlus } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 const Data = [
   {
     name: 'Volunteer',
     text:'Give your time and skills to make a direct impact. Join field missions, teach workshops, or help with local events.',
-    icon: FiDollarSign,
+    icon:FiHeart ,
     cta:"Start Voluntering",
  
   },
@@ -19,7 +19,7 @@ const Data = [
     {
     name: 'Partner',
     text:'Corporate and organizational partnerships amplify our impact. Join us as a partner and help us reach more communities.',
-    icon: FiDollarSign,
+    icon: FiUserPlus,
     cta:"Become a Partner",
  
   },
@@ -29,7 +29,7 @@ const Data = [
 const GetInvolved = () => {
   return (
     <>
-        <section className='pt-20 pb-20'>
+        <section className='pt-30 pb-40'>
             <div>
                 <span className="inline-block bg-indigo-100 dark:bg-primary-50! text-primary-50 dark:text-primary-400! text-lg font-semibold px-4 py-1.5 rounded-full mb-4">
                   Get Involved
@@ -54,7 +54,7 @@ const GetInvolved = () => {
                     <h3 className="mt-4 text-3xl font-bold text-gray-900 dark:text-white! transition-colors">
                         {name}
                     </h3>
-                    <h5 className="mt-3 mb-2 text-2xl leading-tight font-light text-gray-900 dark:text-white! group-hover:text-primary-50 dark:group-hover:text-primary-400! transition-colors">
+                    <h5 className="mt-3 mb-2 text-2xl text-pretty font-light text-gray-900 dark:text-white! group-hover:text-primary-50 dark:group-hover:text-primary-400! transition-colors">
                         {text}
                     </h5>
                     {/* <span className="flex items-center gap-1 mt-5 mb-7 dark:text-white!">

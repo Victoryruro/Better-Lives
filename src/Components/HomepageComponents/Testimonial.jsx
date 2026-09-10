@@ -82,7 +82,7 @@ export default function Testimonials() {
   const goNext = () => setIndex((i) => Math.min(i + 1, maxIndex))
 
   return (
-    <section className="w-full py-16 px-6 bg-white dark:bg-gray-950!">
+    <section className="w-full py-16 px-6 bg-[#f9fafb] dark:bg-gray-950!">
       <div className="p-10 mx-auto text-center">
         <span className="inline-block bg-indigo-100 dark:bg-primary-50! text-primary-50 dark:text-primary-400! text-lg font-semibold px-4 py-1.5 rounded-full mb-4">
           Testimonials
@@ -93,7 +93,7 @@ export default function Testimonials() {
         </h2>
 
         <p className="mt-3 text-gray-500 dark:text-gray-400!  mx-auto text-xl">
-            Behind every statistic is a human story. Meet some of the people whose lives have been changed through our programs.
+            Behind every statistic is a human story. Meet some of the people <br /> whose lives have been changed through our programs.
 
         </p>
 
@@ -131,7 +131,7 @@ export default function Testimonials() {
 
 
 
-                    <p className="relative mt-10 text-gray-600 dark:text-gray-300! leading-relaxed flex-1 md:text-2xl">
+                    <p className="relative mt-10 text-gray-600 dark:text-gray-300! leading-relaxed flex-1 md:text-2xl text-pretty">
                       {t.quote}
                     </p>
 
