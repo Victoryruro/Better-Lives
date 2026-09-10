@@ -5,7 +5,7 @@ import {Programs} from './Programs'
 const Mission = () => {
   return (
     <>
-        <section className="w-full grid grid-cols-1 lg:grid-cols-2  py-24 px-10 pt-32 pb-32 bg-[#ffffff] dark:bg-[#030712]! items-center gap-10">
+        <section id='mission' className="w-full grid grid-cols-1 lg:grid-cols-2  py-24 px-10 pt-32 pb-32 bg-[#ffffff] dark:bg-[#030712]! items-center gap-10">
             <div className=" mx-auto p-4">
                 <h2 className="text-lg md:text-lg w-3/12 font-medium  text-[#4f46e5]! rounded-full bg-[#e0e7ff]  leading-tight p-2 m-2">
                     Our Mission

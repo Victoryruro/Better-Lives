@@ -4,7 +4,7 @@ import CampaignProgress from './ProgressBar'
 const Impact = () => {
   return (
     <>
-        <section className='bg-white dark:bg-gray-900! pt-20 pb-20'>
+        <section id='impact' className='bg-white dark:bg-gray-900! pt-20 pb-20'>
             <span className="inline-block bg-indigo-100 dark:bg-primary-50! text-primary-50 dark:text-primary-400! text-lg font-semibold px-4 py-1.5 rounded-full mb-4">
                 Our Impact
             </span>

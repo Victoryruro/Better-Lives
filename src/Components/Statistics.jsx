@@ -84,14 +84,14 @@ export function WaveDivider() {
   return (
     <div className="relative w-full overflow-hidden leading-none shrink-0">
       <svg
-        className="w-full h-30 block bg-white border-b border-b-gray-300 "
+        className="w-full h-30 block bg-white dark:bg-gray-900 border-b border-b-gray-300 dark:border-b-gray-800 "
         viewBox="0 0 1440 100"
         preserveAspectRatio="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M0,40 C240,90 480,10 720,40 C960,70 1200,20 1440,50 L1440,100 L0,100 Z"
-          className="fill-gray-50 mb-20"
+          className="fill-gray-50 dark:fill-gray-800 mb-20"
         />
       </svg>
     </div>

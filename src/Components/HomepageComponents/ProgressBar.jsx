@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const campaigns = [
   { name: "Clean Water Initiative",
@@ -17,15 +17,25 @@ const campaigns = [
 
 function ProgressBar({ name, percent, goal }) {
   const [width, setWidth] = useState(0);
+  const progressBarRef = useRef(null);
 
   useEffect(() => {
-    // Start at 0, then animate to target percent on next tick
-    const timeout = setTimeout(() => setWidth(percent), 100);
-    return () => clearTimeout(timeout);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setWidth(percent);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    observer.observe(progressBarRef.current);
+    return () => observer.disconnect();
   }, [percent]);
 
   return (
-    <div className="mb-6">
+    <div ref={progressBarRef} className="mb-6">
       <div className="flex justify-between items-center mb-2">
         <span className="text-gray-800 dark:text-gray-100 text-2xl font-medium">
           {name}

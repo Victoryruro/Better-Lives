@@ -82,7 +82,7 @@ export default function Testimonials() {
   const goNext = () => setIndex((i) => Math.min(i + 1, maxIndex))
 
   return (
-    <section className="w-full py-16 px-6 bg-[#f9fafb] dark:bg-gray-950!">
+    <section id='testimonial' className="w-full py-16 px-6 bg-[#f9fafb] dark:bg-gray-950! ">
       <div className="p-10 mx-auto text-center">
         <span className="inline-block bg-indigo-100 dark:bg-primary-50! text-primary-50 dark:text-primary-400! text-lg font-semibold px-4 py-1.5 rounded-full mb-4">
           Testimonials
