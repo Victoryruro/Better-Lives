@@ -5,6 +5,7 @@ import { useLocation } from 'react-router-dom'
 import { useEffect } from "react";
 import AboutHero from '../Components/AboutPageComponent/AboutHero';
 import OurValues from '../Components/AboutPageComponent/Values';
+import AboutCta from '../Components/AboutPageComponent/Cta';
 
 const About = () => {
 
@@ -23,6 +24,7 @@ const About = () => {
         />
         <AboutHero  />
         <OurValues/>
+        <AboutCta/>
     </>
   )
 }
