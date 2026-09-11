@@ -1,5 +1,8 @@
 import React from 'react'
 import PageHero from '../Components/HeroComponent'
+import ProgramList from '../Components/ProgramPageComponent/ProgramList'
+import OurApproach from '../Components/ProgramPageComponent/Approach'
+import AboutCta from '../Components/AboutPageComponent/Cta'
 
 const ProgramPage = () => {
   return (
@@ -15,6 +18,9 @@ const ProgramPage = () => {
                         { label: 'Program' },
                     ]}        
             />
+            <ProgramList/>
+            <OurApproach/>
+            <AboutCta/>
         </section>
     </>
   )
