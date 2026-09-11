@@ -15,6 +15,9 @@ import './App.css'
 import Navbar from './Pages/Navbar'
 import Footer from './Pages/Footer'
 import ScrollToTop from './Components/ScrollToTopEffect'
+import ScrollProgress from './Components/ScrollProgress'
+import Program from './Components/HomepageComponents/Programs'
+import ProgramPage from './Pages/Program'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,12 +25,13 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollProgress/>
         <ScrollToTop/>
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
-          
+          <Route path='Program' element={<ProgramPage/>}/>
           <Route path="/Contact" element={<Contact />} />
           
         </Routes>

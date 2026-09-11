@@ -26,7 +26,7 @@ const Header = () => {
             <div className="hidden lg:flex space-x-8 font-semibold ml-auto">
               <Link to="/About" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg xl:text-xl">About</Link>
               <Link to="/#mission" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg xl:text-xl">Mission</Link>
-              <Link to="/About" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg xl:text-xl">Programs</Link>
+              <Link to="/Program" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg xl:text-xl">Programs</Link>
               <Link to="/#impact" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg xl:text-xl">Impact</Link>
               <Link to="/#testimonial" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg xl:text-xl">Stories</Link>
               <Link to="/Contact" className="text-gray-500 dark:text-gray-300  hover:text-black dark:hover:text-white! transition text-lg xl:text-xl">Contact</Link>
