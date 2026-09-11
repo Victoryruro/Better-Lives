@@ -53,7 +53,7 @@ export default function OurApproach() {
             lasting change.
           </p>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {steps.map((step) => (
             <StepCard key={step.number} {...step} />
           ))}

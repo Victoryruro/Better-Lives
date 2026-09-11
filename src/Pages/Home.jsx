@@ -25,14 +25,14 @@ const Home = () => {
         <div className='bg-[#f9f9f9] dark:bg-[#0e0e0e] mt-25 pb-10'>
             <Hero id="home"/>
             <div className='bg-white dark:bg-gray-900 h-fit '>
-              <div className='grid grid-cols-2 lg:grid-cols-4 text-3xl md:text-5xl p-20 text-primary-50 font-bold'>
-                <p>50,000+ <span className='text-xl text-gray-600 block'>Lives Changed</span>  </p>
-                <p>120+  <span className='text-xl text-gray-600 block'>Schools Built</span> </p>
-                <p>15  <span className='text-xl text-gray-600 block'>Countries</span> </p>
-                <p>$10M+ <span className='text-xl text-gray-600 block'>Raised</span></p>                                                
+              <div className='grid grid-cols-2 lg:grid-cols-4 text-2xl md:text-5xl p-8 md:p-20 text-primary-50 font-bold'>
+                <p>50,000+ <span className='text-lg md:text-xl text-gray-600 block'>Lives Changed</span>  </p>
+                <p>120+  <span className='text-lg md:text-xl text-gray-600 block'>Schools Built</span> </p>
+                <p>15  <span className='text-lg md:text-xl text-gray-600 block'>Countries</span> </p>
+                <p>$10M+ <span className='text-lg md:text-xl text-gray-600 block'>Raised</span></p>                                                
               </div>      
               <div className='w-full flex items-center justify-center '>
-                <img src={HeroImage} alt="hero image"  className='w-9/12 border border-gray-500 rounded-xl h-[42rem] shadow-2xl shadow-primary-50 ' />  
+                <img src={HeroImage} alt="hero image"  className='w-11/12 lg:w-9/12 border border-gray-500 rounded-xl lg:h-[42rem] shadow-2xl shadow-primary-50 ' />  
               </div>        
 
 

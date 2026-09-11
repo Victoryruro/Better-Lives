@@ -66,9 +66,9 @@ export default function StatsRow() {
 
       <div
         ref={sectionRef}
-        className="w-full py-12 grid grid-cols-2 lg:grid-cols-4 gap-8 gap-y-20 bg-gray-50 dark:bg-primary-600! p-20 pb-30 pt-30 border-b border-b-gray-300" 
+        className="w-full py-12 grid grid-cols-2 lg:grid-cols-4 gap-8 gap-y-20 bg-gray-50 dark:bg-primary-600! p-10 md:p-20 md:pb-30 md:pt-30 border-b border-b-gray-300" 
       >
-        <StatItem className="text-5xl md:text-8xl font-extrabold text-primary-50 flex flex-col" value={5 } prefix='$' suffix="M+" label="Funds Raised" decimals={1}  startAnimation={startAnimation} />
+        <StatItem className="text-3xl lg:text-8xl font-extrabold text-primary-50 flex flex-col" value={5 } prefix='$' suffix="M+" label="Funds Raised" decimals={1}  startAnimation={startAnimation} />
         <StatItem className="text-5xl md:text-8xl font-extrabold text-primary-50" value={50} suffix="K" label="Lives Impacted" startAnimation={startAnimation} />
         <StatItem className="text-5xl md:text-8xl font-extrabold text-primary-50" value={200} suffix="+" label="Active Volunteers" startAnimation={startAnimation} />
         <StatItem className="text-5xl md:text-8xl font-extrabold text-primary-50" value={15}  label="Countries Served" startAnimation={startAnimation} />

@@ -20,7 +20,7 @@ const Impact = () => {
 
 
             </p>
-            <div className='grid grid-cols-2 lg:grid-cols-4 text-4xl md:text-7xl p-20 text-primary-50 font-bold'>
+            <div className='grid grid-cols-2 lg:grid-cols-4 text-3xl md:text-7xl p-7 md:p-20 text-primary-50 text-nowrap font-bold gap-4'>
                 <p>50,000+ <span className='text-xl text-gray-600 block'>Lives Impacted</span>  </p>
                 <p>120+  <span className='text-xl text-gray-600 block'>Schools Built</span> </p>
                 <p>500+  <span className='text-xl text-gray-600 block'>Well Drilled</span> </p>

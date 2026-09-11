@@ -75,13 +75,13 @@ const Header = () => {
         {/* <!-- Mobile Menu --> */}
         {isOpen && (
           <div id="mobile-menu" className="  px-4 pb-4 w-full flex flex-col justify-start items-start p-10 gap-7 lg:hidden bg-primary-400 dark:bg-gray-900! border-t border-gray-200 dark:border-gray-700! transition-all duration-300">
-              <Link onClick={() => setIsOpen(false)} to="/About" className="text-gray-900 dark:text-gray-100! hover:text-gray-700 dark:hover:text-white transition text-2xl">About</Link>
+              <Link onClick={() => setIsOpen(false)}  to="/About" className="text-gray-900 dark:text-gray-100! hover:text-gray-700 dark:hover:text-white transition text-2xl">About</Link>
               <Link onClick={() => setIsOpen(false)} to="/#mission" className="text-gray-900 dark:text-gray-100! hover:text-gray-700 dark:hover:text-white transition text-2xl">Mission</Link>
-              <Link onClick={() => setIsOpen(false)} to="/About" className="text-gray-900 dark:text-gray-100! hover:text-gray-700 dark:hover:text-white transition text-2xl">Programs</Link>
+              <Link onClick={() => setIsOpen(false)} to="/Program" className="text-gray-900 dark:text-gray-100! hover:text-gray-700 dark:hover:text-white transition text-2xl">Programs</Link>
               <Link onClick={() => setIsOpen(false)} to="/#impact" className="text-gray-900 dark:text-gray-100! hover:text-gray-700 dark:hover:text-white transition text-2xl">Impact</Link>
               <Link onClick={() => setIsOpen(false)} to="/Contact" className="text-gray-900 dark:text-gray-100! hover:text-gray-700 dark:hover:text-white transition text-2xl">Contact</Link>
               <Link onClick={() => setIsOpen(false)} to="/#testimonial" className="text-gray-900 dark:text-gray-100! hover:text-gray-700 dark:hover:text-white transition text-2xl">Stories</Link>
-              <Link to="/#home" className="block w-full text-2xl justify-self-stretch sm:hidden px-4 py-2 bg-primary-50 rounded-md text-white font-semibold  hover:bg-primary-50 transition-all">
+              <Link onClick={() => setIsOpen(false)} to="/#home" className="block w-full text-2xl justify-self-stretch sm:hidden px-4 py-2 bg-primary-50 rounded-md text-white font-semibold  hover:bg-primary-50 transition-all">
                 Donate Now
               </Link>
           </div>

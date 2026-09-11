@@ -37,10 +37,10 @@ function ProgressBar({ name, percent, goal }) {
   return (
     <div ref={progressBarRef} className="mb-6">
       <div className="flex justify-between items-center mb-2">
-        <span className="text-gray-800 dark:text-gray-100 text-2xl font-medium">
+        <span className="text-gray-800 dark:text-gray-100 text-lg md:text-2xl font-medium">
           {name}
         </span>
-        <span className="text-2xl text-gray-500 dark:text-gray-400">
+        <span className="text-lg md:text-2xl text-gray-500 dark:text-gray-400">
           {percent}% of {goal}
         </span>
       </div>

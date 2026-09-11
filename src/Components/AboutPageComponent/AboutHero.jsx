@@ -4,9 +4,9 @@ import image from '../../assets/BetterLives.jpg'
 const AboutHero = () => {
   return (
     <>
-        <section className="w-full grid grid-cols-1 lg:grid-cols-2  py-24 px-10 pt-32 pb-32 bg-[#ffffff] dark:bg-[#030712]! items-center gap-10">
+        <section className="w-full grid grid-cols-1 lg:grid-cols-2  py-24 md:px-10 pt-32 pb-32 bg-[#ffffff] dark:bg-[#030712]! items-center gap-10">
             <div className=" mx-auto p-4">
-                <h2 className="text-lg md:text-lg w-3/12 font-medium  text-primary-50! rounded-full bg-[#e0e7ff]  leading-tight p-2 m-2">
+                <h2 className="text-lg md:text-lg max-w-5/12 font-medium  text-primary-50! rounded-full bg-[#e0e7ff]  leading-tight p-2 m-2">
                     Our Mission
                 </h2>
                 <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-white! text-left leading-tight m-2 mb-5 mt-5">

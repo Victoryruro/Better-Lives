@@ -37,10 +37,10 @@ export default function OurValues() {
           {VALUES.map(({ icon: Icon, title, description }) => (
             <div
               key={title}
-              className="text-left text-3xl bg-white dark:bg-gray-900! border border-gray-200 dark:border-gray-700! rounded-2xl p-16"
+              className="text-left text-3xl bg-white dark:bg-gray-900! border border-gray-200 dark:border-gray-700! rounded-2xl p-7 md:p-16"
             >
               <div className="h-15 w-15 rounded-lg bg-indigo-100 dark:bg-primary-50/30! flex items-center justify-center">
-                <Icon size={40} className="text-primary-50 dark:text-[#2aa77e]!" />
+                <Icon size={35} className="text-primary-50 dark:text-[#2aa77e]!" />
               </div>
 
               <h3 className="mt-4 font-bold text-gray-900 dark:text-white! text-3xl">

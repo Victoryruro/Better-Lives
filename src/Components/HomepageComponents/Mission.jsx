@@ -5,9 +5,9 @@ import {Programs} from './Programs'
 const Mission = () => {
   return (
     <>
-        <section id='mission' className="w-full grid grid-cols-1 lg:grid-cols-2  py-24 px-10 pt-32 pb-32 bg-[#ffffff] dark:bg-[#030712]! items-center gap-10">
+        <section id='mission' className="w-full grid grid-cols-1 lg:grid-cols-2  py-24 md:px-10 pt-32 pb-32 bg-[#ffffff] dark:bg-[#030712]! items-center gap-10 text-pretty">
             <div className=" mx-auto p-4">
-                <h2 className="text-lg md:text-lg w-3/12 font-medium  text-primary-50! rounded-full bg-[#e0e7ff]  leading-tight p-2 m-2">
+                <h2 className="text-base md:text-lg max-w-5/12 font-medium  text-primary-50! rounded-full bg-[#e0e7ff]  leading-tight p-2 m-2">
                     Our Mission
                 </h2>
                 <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-white! text-left leading-tight m-2">
@@ -26,9 +26,9 @@ const Mission = () => {
                     {Programs.map(({ name,Text, icon:Icon,bg, iconColor 
                         
                     }) =>(
-                        <div className='flex flex-row justify-center items-center gap-8' >
-                            <div className={`h-15 w-30 rounded-xl flex items-center justify-center ${bg}`}>
-                                <Icon size={35} className={iconColor} />
+                        <div className='flex flex-row justify-center items-center gap-3 md:gap-8' >
+                            <div className={` h-15 w-20 p-4 rounded-xl flex items-center justify-center ${bg}`}>
+                                <Icon size={35}  className={iconColor} />
                             </div>
                             <div>
                                 <h3 className="mt-4 text-2xl font-bold text-gray-900 dark:text-white! group-hover:text-primary-50 dark:group-hover:text-primary-50/90! transition-colors">

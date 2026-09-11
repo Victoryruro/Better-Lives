@@ -82,8 +82,8 @@ export default function Testimonials() {
   const goNext = () => setIndex((i) => Math.min(i + 1, maxIndex))
 
   return (
-    <section id='testimonial' className="w-full py-16 px-6 bg-[#f9fafb] dark:bg-gray-950! ">
-      <div className="p-10 mx-auto text-center">
+    <section id='testimonial' className="w-full md:py-16 md:px-6 bg-[#f9fafb] dark:bg-gray-950! ">
+      <div className="p-4 md:p-10 mx-auto text-center">
         <span className="inline-block bg-indigo-100 dark:bg-primary-50! text-primary-50 dark:text-primary-400! text-lg font-semibold px-4 py-1.5 rounded-full mb-4">
           Testimonials
         </span>
@@ -103,13 +103,13 @@ export default function Testimonials() {
           <button
             onClick={goPrev}
             disabled={index === 0}
-            className="absolute -left-4 md:-left-6 top-1/2 -translate-y-1/2 z-10 h-10 w-10 flex items-center justify-center rounded-full bg-white dark:bg-gray-800! shadow-md text-gray-500 dark:text-gray-300! hover:text-[#4c42dc] disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+            className="absolute -left-4 md:-left-6 top-1/2 -translate-y-1/2 z-10 h-10 w-10 flex items-center justify-center rounded-full bg-white dark:bg-gray-800! shadow-md text-gray-500 dark:text-gray-300! hover:text-primary-50 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
           >
             <FiChevronLeft size={30} />
           </button>
 
           {/* Track */}
-          <div className="overflow-hidden p-5">
+          <div className="overflow-hidden p-2 md:p-5">
             <motion.div
               className="flex"
               animate={{ x: `-${index * (100 / visibleCount)}%` }}
@@ -121,7 +121,7 @@ export default function Testimonials() {
                   className="shrink-0 px-3"
                   style={{ flex: `0 0 ${100 / visibleCount}%` }}
                 >
-                  <div className="relative h-full text-left md:text-lg bg-primary-400 shadow-md dark:bg-gray-900! rounded-2xl p-10 flex flex-col gap-4 overflow-hidden">
+                  <div className="relative h-full text-left md:text-lg bg-primary-400 shadow-md dark:bg-gray-900! rounded-2xl p-7 md:p-10 flex flex-col gap-4 overflow-hidden">
                     <span
                       aria-hidden="true"
                       className="absolute top-2 left-8 text-9xl  leading-none font-serif font-bold text-primary-50/60 dark:text-primary-50/20!"

@@ -42,7 +42,7 @@ const programs = [
 
 function ProgramCard({ icon: Icon, title, description, items }) {
   return (
-    <div className="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-2xl p-6 hover:shadow-md transition-shadow h-fit ">
+    <div className="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-2xl p-3 md:p-6 hover:shadow-md transition-shadow h-fit ">
       <div className="w-20 h-20 rounded-xl bg-emerald-100 dark:bg-emerald-900/40 flex items-center justify-center text-emerald-600 dark:text-emerald-400 mb-5">
         <Icon size={35} />
       </div>
@@ -66,10 +66,10 @@ function ProgramCard({ icon: Icon, title, description, items }) {
 
 export default function ProgramList() {
   return (
-    <section id="programs" className="scroll-mt-20 px-6 py-20 bg-gray-50 dark:bg-gray-950">
+    <section id="programs" className="scroll-mt-20 md:px-6 py-20 bg-gray-50 dark:bg-gray-950">
       <div className="max-w-11/12 mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-6xl font-bold text-gray-900 dark:text-white mb-3">
+          <h2 className=" text-3xl md:text-6xl font-bold text-gray-900 dark:text-white mb-3">
                 Creating Lasting Change          
             </h2>
           <p className="text-gray-600 text-2xl dark:text-gray-400 max-w-xl mx-auto">
