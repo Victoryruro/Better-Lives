@@ -42,7 +42,7 @@ const programs = [
 
 function ProgramCard({ icon: Icon, title, description, items }) {
   return (
-    <div className="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-2xl p-6 hover:shadow-md transition-shadow h-106 ">
+    <div className="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-2xl p-6 hover:shadow-md transition-shadow h-fit ">
       <div className="w-20 h-20 rounded-xl bg-emerald-100 dark:bg-emerald-900/40 flex items-center justify-center text-emerald-600 dark:text-emerald-400 mb-5">
         <Icon size={35} />
       </div>

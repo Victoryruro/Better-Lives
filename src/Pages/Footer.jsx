@@ -25,7 +25,7 @@ const Footer = () => {
                 <div className="col-span-1 md:col-span-full text-left! lg:col-span-2">
                         {/* <!-- Logo --> */}
                     <div className="shrink-0 text-primary-50 font-bold text-2xl ">
-                        <Link to="/">
+                        <Link to="/#home">
                         <img src={image} alt="Logo" className="h-20 " />
                         </Link>
                     </div>
@@ -72,37 +72,32 @@ const Footer = () => {
 
                 <div className="md:col-span-full lg:col-span-2 text-left! grid grid-cols-2 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-3  justify-center   md:gap-4 gap-2 text-nowrap ">
                   <div className="md:p-5  ">
-                      <h3 className="text-lg md:text-base font-bold text-primary-400 uppercase">For Job Seekers</h3>
+                      <h3 className="text-lg md:text-base font-bold text-primary-400 uppercase">Programs</h3>
                       <ul className="mt-4 space-y-2">
-                          <li><Link to="/#hero" className=" hover:text-gray-300 transition">Browse Jobs</Link></li>
-                          <li><Link to="/About#about" className=" hover:text-gray-300 transition">Companies</Link></li>
-                          <li><Link to="/About#shop" className=" hover:text-gray-300 transition">Career Tips</Link></li>
-                          <li><Link to="/Menu" className=" hover:text-gray-300 transition">Salary Guide</Link></li>
-                          
+                          <li><a href="/#home" className=" hover:text-gray-300 transition">Education</a></li>
+                          <li><a href="/#home" className=" hover:text-gray-300 transition">Healthcare</a></li>
+                          <li><a href="/#home" className=" hover:text-gray-300 transition text-pretty">Economic Empowerment</a></li>
+                          <li><a href="/#home" className=" hover:text-gray-300 transition">Environment</a></li>
                       </ul>
                   </div>
                   <div className="md:p-5">
-                      <h3 className="text-lg md:text-base font-bold text-primary-400 uppercase">For Employers</h3>
+                      <h3 className="text-lg md:text-base font-bold text-primary-400 uppercase">Organization</h3>
                       <ul className="mt-4 space-y-2">
-                          <li><Link to="/#hero" className=" hover:text-gray-300 transition">Post a Job</Link></li>
-                          <li><Link to="/About#about" className=" hover:text-gray-300 transition">Pricing</Link></li>
-                          <li><Link to="/About#shop" className=" hover:text-gray-300 transition">For Employers</Link></li>
-                          <li><Link to="/Menu" className=" hover:text-gray-300 transition">High Resources</Link></li>
-                         
+                          <li><a href="/#home" className=" hover:text-gray-300 transition">About Us</a></li>
+                          <li><a href="/#home" className=" hover:text-gray-300 transition">Our Team</a></li>
+                          <li><a href="/#home" className=" hover:text-gray-300 transition">Annual Report</a></li>
+                          <li><a href="/#home" className=" hover:text-gray-300 transition">Press</a></li>
                       </ul>
                   </div>
                   <div className="md:p-5">
-                      <h3 className="text-lg md:text-base font-bold text-primary-400 uppercase">Resources</h3>
+                      <h3 className="text-lg md:text-base font-bold text-primary-400 uppercase">Support</h3>
                       <ul className="mt-4 space-y-2">
-                          <li><Link to="/#hero" className=" hover:text-gray-300 transition">Blog</Link></li>
-                          <li><Link to="/About#about" className=" hover:text-gray-300 transition">About Us</Link></li>
-                          <li><Link to="/About#shop" className=" hover:text-gray-300 transition">Features</Link></li>
-                          <li><Link to="/Menu" className=" hover:text-gray-300 transition">Style Guide</Link></li>
-
+                          <li><a href="/#home" className=" hover:text-gray-300 transition">Donate</a></li>
+                          <li><a href="/#home" className=" hover:text-gray-300 transition">Volunteer</a></li>
+                          <li><a href="/#home" className=" hover:text-gray-300 transition">Partner</a></li>
+                          <li><a href="/#home" className=" hover:text-gray-300 transition">Contact</a></li>
                       </ul>
                   </div>
-
-
                 </div>  {/* <!-- Footer Center: Useful Links --> */}
                 <form
                     onSubmit={handleSubmit}
